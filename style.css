@@ -1,0 +1,17 @@
+
+p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.form-element{
+    border: solid 5px orange;
+    border-radius: 20px;
+}
+
+#nav-bar{
+    background-color: coral;
+    background-size: auto;
+}
