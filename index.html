@@ -22,9 +22,12 @@
     </head>
     
     <body>
-        <a href="https://gco.principalwebsite.com/">
-            <img src = "Media/logo_general_empresa.jpg" alt="logo de la empresa Oransch" width = "100" height="100">
-        </a>
+        <figure id="logo-oransch">
+            <a href="https://gco.principalwebsite.com/">
+                <img src = "Media/logo_general_empresa.jpg" alt="logo de la empresa Oransch" width = "100" height="100">
+            </a>
+        </figure>
+
 
 
         <nav id="nav-bar">
@@ -35,10 +38,18 @@
         <h1 id="title-oransch">Inicio - Grupo Corporativo Oransch</h1>
         <h2>Historia de Oransch</h2>
 
-        <video controls  id="video-prueba">
-            <source src="Media/generic_video.mp4" type="video/MP4">
-            Video not Suported
-        </video>
+
+        <div class="media-elements">
+            <video controls  id="video-prueba"> <!--Controls adds controls to audio and video-->
+                <source src="Media/generic_video.mp4" type="video/MP4">
+                Video not Supported <!--Text in case of fails with video-->
+            </video>
+
+            <audio controls src="Media/hearty_trial_song.mp3">
+                Audio not Supported
+            </audio>
+        </div>
+
 
 
 
