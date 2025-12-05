@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" /> <!--Makes content watchable on all platforms-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name = "author" content="Andrey SC">
+        <meta content="Grupo Corporativo Oransch" property="og:title"> <!--Title of content from other websites-->
+        <meta content="Tu asesoría de confianza en Costa Rica" property="og:description">
+        <meta property="og:type" content="website">
+        <!--<meta property="og.url" content="">URL for content-->
+        <!--<meta content="image.png" property="og:image"> for displaying images (minimum, 600x315)-->
+
+        <link rel="icon" href="../Media/favicon.ico" />
+        <!--<link rel="preconnect" href="https://fonts.googleapis.com" /> tp import from another website and precarge it-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--<link rel="preconnect" href="link"/> to import from another website and precharge it-->
+
+
+        <title>Grupo Corporativo Oransch</title>
+    </head>
+    
+    <body>
+        <figure id="logo-oransch">
+            <a href="https://gco.principalwebsite.com/">
+                <img src = "../Media/logo_general_empresa.jpg" alt="logo de la empresa Oransch" width = "100" height="100">
+            </a>
+        </figure>
+
+
+
+        <nav id="nav-bar">
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="https://github.com/BwipoT" target="_blank">GitHub Profile</a>
+        </nav>
+
+        <h1 id="title-oransch">Inicio - Grupo Corporativo Oransch</h1>
+        <h2>Historia de Oransch</h2>
+
+
+        <div class="media-elements">
+            <video controls muted autoplay  id="video-prueba" poster="../Media/poster_download_option.jpeg"> <!--Autoplay to audio and video-->
+                <source src="../Media/generic_video.mp4" type="video/MP4" width="100" height="100">
+                Video not Supported <!--Text in case of fails with video-->
+            </video>
+
+            <audio controls loop muted autoplay src="../Media/hearty_trial_song.mp3" type="audio/mpeg">
+                Audio not Supported
+            </audio>
+        </div>
+
+
+
+
+        <main>
+                <p>Esto es un párrafo para explicar sobre la empresa Oransch<br>
+            Además, debe concerse <em>mejor</em> sobre la misión y visión</p>
+            
+            <i>Misión</i><br>
+                <u>Aquí se marca la visión de la empresa</u><br>
+    
+            <i>Visión</i><br>
+                <strong>La visión debe ser para texto <b>relevante</b></strong>
+    
+            <p>Esta es una lista ordenada de tipos de asesorías que ofrece Oransch:</p>
+    
+            <ol>
+                <li>Asesoria de Páginas web</li>
+                <li>Asesoria Contable</li>
+                <li>Asesoria Legal</li>
+                <li>Asesoria Administrativa</li>
+                <li>Asesoría de Marketing</li>
+            </ol> <!--ul es análogo-->
+        </main>
+
+        <p>Elije la opcion para la empresa:</p>
+        <select>
+           <option value="ninguno" selected >Ninguna</option>
+           <option value="asesorias">Aserorias</option>
+        </select>
+        <br>
+        <br>
+        <form class="form-element">
+            <label>Nombre: </label>
+            <input type="text" name="name" value="">
+
+            <br><br>
+            <label for="t1">Correo Electronico: </label>
+            <input type="text" id="t1" name="email" value="">
+            <br><br>
+            <label for="t2">Número de Teléfono: </label>
+            <input type="tel" id="t2" name="phone_number" value="">
+            <br><br>
+            <label for="comments">Comentarios: </label>
+            <textarea type="text" id="comments" name="email" value="" rows="10" cols="50"></textarea>
+            <br><br>
+            <label for="the-heckbox">Necesita ayuda adicional? </label>
+            <input type="checkbox" id="the-heckbox" checked />
+            <input type="submit">
+        </form>
+
+
+        <button onclick="mostrarInformacion()"> Muestra más información! </button>
+        <p id="informacion">Al dar click al botón, se muestra más información</p>
+        
+        <script src="script.js"> </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
