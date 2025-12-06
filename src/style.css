@@ -12,11 +12,51 @@ p {
 }
 
 #nav-bar{
-    background-color: coral;
+    background-color: lightcoral;
     background-size: auto;
 }
 
 #video-prueba{
     max-width: 30%;
     max-height: 30%;
+}
+
+#sobre-nosotros:link{
+    color: white;
+}
+
+#sobre-nosotros:visited{
+    color: black;
+}
+
+#sobre-nosotros:hover{
+    color: blue;
+}
+
+#sobre-nosotros:focus{
+    color: hotpink;
+}
+
+#sobre-nosotros:active{
+    color: green;
+}
+
+#profile-github:link{
+    color: white;
+}
+
+#profile-github:visited{
+    color: black;
+}
+
+#profile-github:hover{
+    color: blue;
+}
+
+#profile-prueba:focus{
+    color: black;
+}
+
+#profile-github:active{
+    color: green;
 }

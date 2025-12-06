@@ -27,27 +27,34 @@
             </a>
         </figure>
 
+        <section id="section one"> <!--Use more sections to divide content-->
+            <nav id="nav-bar">
+                <a href="about.html" target="_blank" id="sobre-nosotros">Sobre Nosotros</a>
+                <!--_self, _parent, _top and _unfencedTop-->
+                <a href="https://github.com/BwipoT" target="_blank" id="profile-github">GitHub Profile</a>
+                <!--Order for links in CSS: Link, visited, hover, focus and active-->
+                <a href="contact.html" target="_blank" id="contacto">Contacto</a>
+            </nav>
+        </section>
+
+        <section id="section two">
+            <h1 id="title-oransch">Inicio - Grupo Corporativo Oransch</h1>
+            <h2>Historia de Oransch</h2>
 
 
-        <nav id="nav-bar">
-            <a href="about.html">Sobre Nosotros</a>
-            <a href="https://github.com/BwipoT" target="_blank">GitHub Profile</a>
-        </nav>
+            <div class="media-elements">
+                <video controls muted autoplay  id="video-prueba" poster="../Media/poster_download_option.jpeg"> <!--Autoplay to audio and video-->
+                    <source src="../Media/generic_video.mp4" type="video/MP4" width="100" height="100">
+                    Video not Supported <!--Text in case of fails with video-->
+                </video>
 
-        <h1 id="title-oransch">Inicio - Grupo Corporativo Oransch</h1>
-        <h2>Historia de Oransch</h2>
+                <audio controls loop muted autoplay src="../Media/hearty_trial_song.mp3" type="audio/mpeg">
+                    Audio not Supported
+                </audio>
+            </div>
+        </section>
 
 
-        <div class="media-elements">
-            <video controls muted autoplay  id="video-prueba" poster="../Media/poster_download_option.jpeg"> <!--Autoplay to audio and video-->
-                <source src="../Media/generic_video.mp4" type="video/MP4" width="100" height="100">
-                Video not Supported <!--Text in case of fails with video-->
-            </video>
-
-            <audio controls loop muted autoplay src="../Media/hearty_trial_song.mp3" type="audio/mpeg">
-                Audio not Supported
-            </audio>
-        </div>
 
         <!--formats for images in recent years are WEBP and AVIF, instead of the classic PNG and JPG-->
         <!--for more scalable images, consult SVG formats, that can be freely modified and scaled:-->
@@ -57,16 +64,17 @@
 
 
         <main>
-                <p>Esto es un párrafo para explicar sobre la empresa Oransch<br>
+                <p>Esto es un párrafo para explicar sobre la empresa Oransch. Este es el caso central de la página<br>
             Además, debe concerse <em>mejor</em> sobre la misión y visión</p>
             
             <i>Misión</i><br>
-                <u>Aquí se marca la visión de la empresa</u><br>
+                <u>Aquí se marca la <strong>visión</strong> de la empresa</u><br> <!--Strong is recommended instead of b-->
     
             <i>Visión</i><br>
                 <strong>La visión debe ser para texto <b>relevante</b></strong>
     
-            <p>Esta es una lista ordenada de tipos de asesorías que ofrece Oransch:</p>
+            <p>Esta es una lista ordenada de tipos de asesorías que ofrece Oransch</p>
+            <font size="6" color="green">Esto se presenta a continuación:</font>
     
             <ol>
                 <li>Asesoria de Páginas web</li>
