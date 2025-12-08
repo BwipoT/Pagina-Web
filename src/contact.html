@@ -13,7 +13,7 @@
     </head>
     <body>
         <main>
-            <h1>¿Quieres trabajar con nosotros?</h1>
+            <h1>¿Quieres comunicarse con nosotros?</h1>
             <dl>
                 <dt>Atención personalizada</dt>
                     <dd>Ofrecemos servicio de WhatsApp 24/7</dd>
@@ -21,13 +21,15 @@
         </main>
 
         <section>
-            <form class="form-element">
-                <label>Nombre: </label>
-                <input type="text" name="name" value="">
-
+            <form class="form-element" action=""> <!--The action is to send the information to a place when is put-->
+                <label>Nombre:
+                    <input type="text" name="name" value="" required/> <!--implicit form of association. The required is mandatory-->
+                </label>
                 <br><br>
                 <label for="t1">Correo Electronico: </label>
-                <input type="text" id="t1" name="email" value="">
+                <input type="email" id="t1" name="email" value="" placeholder="example@gmail.com" required> <!--Explicit form of association-->
+
+
                 <br><br>
                 <label for="t2">Número de Teléfono: </label>
                 <input type="tel" id="t2" name="phone_number" value="">
@@ -37,8 +39,13 @@
                 <br><br>
                 <label for="the-heckbox">Necesita ayuda adicional? </label>
                 <input type="checkbox" id="the-heckbox" checked />
-                <input type="submit">
+
+
+                <button type="reset">Reiniciar formulario</button>
+                <button type="submit">Enviar formulario</button>
             </form>
+            <br>
+            <br>
 
 
             <button onclick="mostrarInformacion()"> Muestra más información! </button>
