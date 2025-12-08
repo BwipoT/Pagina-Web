@@ -21,24 +21,58 @@
         </main>
 
         <section>
-            <form class="form-element" action=""> <!--The action is to send the information to a place when is put-->
-                <label>Nombre:
-                    <input type="text" name="name" value="" required/> <!--implicit form of association. The required is mandatory-->
-                </label>
-                <br><br>
-                <label for="t1">Correo Electronico: </label>
-                <input type="email" id="t1" name="email" value="" placeholder="example@gmail.com" required> <!--Explicit form of association-->
+            <form class="form-element" action="" method="post"> <!--The action is to send the information to a place when is put-->
+                <!--The method atribute is used to specify the HTTP method to use when sending the form data. The most common are GET and POST-->
+                <fieldset> <!--fieldset is to group similar inputs-->
+                    <leyend>Información General</leyend>
+                    <br>
+                    <label>Nombre:
+                        <input type="text" name="name" value="" required minlength="3" maxlength="64" size="20"/> <!--implicit form of association. The required is mandatory-->
+                    </label>
+                    <!--the name attribute is to identify it in the server-->
+                    <br><br>
+                    <label for="edad">Edad (opcional):
+                        <input type="number" max="80" min="18" id="edad" name="edad" value=""/>
+                    </label>
+                    <br><br>
+                    <label for="t1">Correo Electronico: </label>
+                    <input type="email" id="t1" name="email" value="" placeholder="example@gmail.com" required> <!--Explicit form of association-->
+                    <!--Readonly is for inputs that can have messages, but cannot be edited-->
+
+                    <br><br>
+                    <label for="t2">Número de Teléfono: </label>
+                    <input type="tel" id="t2" name="phone_number" value="">
 
 
-                <br><br>
-                <label for="t2">Número de Teléfono: </label>
-                <input type="tel" id="t2" name="phone_number" value="">
+                </fieldset>
+
+
                 <br><br>
                 <label for="comments">Comentarios: </label>
                 <textarea type="text" id="comments" name="email" value="" rows="10" cols="50"></textarea>
                 <br><br>
-                <label for="the-heckbox">Necesita ayuda adicional? </label>
+
+                <fieldset>
+                    <legend>¿Necesitas ayuda adicional?</legend>
+                    <input type="radio" id="yes" name="aditional-help">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="aditional-help">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Por qué te gustaría pedir nuestros servicios?</legend>
+                    <input type="checkbox" id="pedidos-anteriores" name="reason-service" value="pedidos-anteriores">
+                    <label for="pedidos-anteriores">He usado los servicios anteriormente</label>
+                    <input type="checkbox" id="recomendacion" name="reason-service" value="recomendacion">
+                    <label for="recomendacion">Recomendación de alguna persona</label>
+                    <input type="checkbox" id="buen-servicio" name="reason-service" value="buen-servicio">
+                    <label for="buen-servicio">Buen Servicio al Cliente</label>
+                </fieldset>
+                <label for="the-heckbox">¿Requieres de más información? </label>
                 <input type="checkbox" id="the-heckbox" checked />
+
+                <br><br>
 
 
                 <button type="reset">Reiniciar formulario</button>
