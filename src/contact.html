@@ -42,22 +42,6 @@
                     <br><br>
                     <label for="t2">Número de Teléfono: </label>
                     <input type="tel" id="t2" name="phone_number" value="">
-
-
-                </fieldset>
-
-
-                <br><br>
-                <label for="comments">Comentarios: </label>
-                <textarea type="text" id="comments" name="email" value="" rows="10" cols="50"></textarea>
-                <br><br>
-
-                <fieldset>
-                    <legend>¿Necesitas ayuda adicional?</legend>
-                    <input type="radio" id="yes" name="aditional-help">
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="aditional-help">
-                    <label for="no">No</label>
                 </fieldset>
 
                 <fieldset>
@@ -69,10 +53,32 @@
                     <input type="checkbox" id="buen-servicio" name="reason-service" value="buen-servicio">
                     <label for="buen-servicio">Buen Servicio al Cliente</label>
                 </fieldset>
-                <label for="the-heckbox">¿Requieres de más información? </label>
-                <input type="checkbox" id="the-heckbox" checked />
+
+                <fieldset>
+                    <legend>¿Necesitas ayuda adicional?</legend>
+                    <input type="radio" id="yes" name="aditional-help">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="aditional-help">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿Podemos compartir su información con fines de marketing?</legend>
+                    <select name="more-information" id="information">
+                        <option selected value="Yes">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </fieldset>
 
                 <br><br>
+
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+                    <br><br>
+                    <label for="comments">Comentarios: </label>
+                    <textarea type="text" id="comments" name="comments" value="" rows="10" cols="30"></textarea>
+                    <br><br>
+                </fieldset>
 
 
                 <button type="reset">Reiniciar formulario</button>
