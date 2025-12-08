@@ -13,8 +13,44 @@
     </head>
     <body>
         <main>
-            <h1>Contacta con nosostros</h1>
+            <h1>¿Quieres trabajar con nosotros?</h1>
+            <dl>
+                <dt>Atención personalizada</dt>
+                    <dd>Ofrecemos servicio de WhatsApp 24/7</dd>
+            </dl>
         </main>
+
+        <section>
+            <form class="form-element">
+                <label>Nombre: </label>
+                <input type="text" name="name" value="">
+
+                <br><br>
+                <label for="t1">Correo Electronico: </label>
+                <input type="text" id="t1" name="email" value="">
+                <br><br>
+                <label for="t2">Número de Teléfono: </label>
+                <input type="tel" id="t2" name="phone_number" value="">
+                <br><br>
+                <label for="comments">Comentarios: </label>
+                <textarea type="text" id="comments" name="email" value="" rows="10" cols="50"></textarea>
+                <br><br>
+                <label for="the-heckbox">Necesita ayuda adicional? </label>
+                <input type="checkbox" id="the-heckbox" checked />
+                <input type="submit">
+            </form>
+
+
+            <button onclick="mostrarInformacion()"> Muestra más información! </button>
+            <p id="informacion">Al dar click al botón, se muestra más información</p>
+        </section>
+
+        <address> <!--This is preferred over div semantic-->
+            <h2>Dirección Física: 175 metros norte del Parque Central de San Rafael de Heredia, al costado sur de Importadora Monge</h2>
+            <p>Horario presencial: <time datetime="7:00">7:00 am</time> a <time datetime="17:00">5:00 pm</time> </time> </p><!--ISO 8601 for datetime-->
+            <p>Mail: <a href="mailto:gcocr@company.com">gcocr@company.com</a></p>
+        </address>
+
     </body>
 
     <footer>

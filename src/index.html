@@ -21,21 +21,27 @@
     </head>
     
     <body>
+        <header> <!--represents the introductory section of the page-->
+            <section id="section one"> <!--Use more sections to divide content-->
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="about.html" target="_blank" id="sobre-nosotros">Sobre Nosotros</a></li><!--_self, _parent, _top and _unfencedTop-->
+
+                        <li><a href="https://github.com/BwipoT" target="_blank" id="profile-github">GitHub Profile</a></li>
+                        <li><!--Order for links in CSS: Link, visited, hover, focus and active-->
+                            <a href="contact.html" target="_blank" id="contacto">Contacto</a></li>
+                    </ul>
+
+                </nav>
+            </section>
+        </header>
         <figure id="logo-oransch">
             <a href="https://gco.principalwebsite.com/">
                 <img src = "../Media/logo_general_empresa.jpg" alt="logo de la empresa Oransch" width = "100" height="100">
             </a>
         </figure>
 
-        <section id="section one"> <!--Use more sections to divide content-->
-            <nav id="nav-bar">
-                <a href="about.html" target="_blank" id="sobre-nosotros">Sobre Nosotros</a>
-                <!--_self, _parent, _top and _unfencedTop-->
-                <a href="https://github.com/BwipoT" target="_blank" id="profile-github">GitHub Profile</a>
-                <!--Order for links in CSS: Link, visited, hover, focus and active-->
-                <a href="contact.html" target="_blank" id="contacto">Contacto</a>
-            </nav>
-        </section>
+
 
         <section id="section two">
             <h1 id="title-oransch">Inicio - Grupo Corporativo Oransch</h1>
@@ -92,34 +98,18 @@
         </select>
         <br>
         <br>
-        <form class="form-element">
-            <label>Nombre: </label>
-            <input type="text" name="name" value="">
 
-            <br><br>
-            <label for="t1">Correo Electronico: </label>
-            <input type="text" id="t1" name="email" value="">
-            <br><br>
-            <label for="t2">Número de Teléfono: </label>
-            <input type="tel" id="t2" name="phone_number" value="">
-            <br><br>
-            <label for="comments">Comentarios: </label>
-            <textarea type="text" id="comments" name="email" value="" rows="10" cols="50"></textarea>
-            <br><br>
-            <label for="the-heckbox">Necesita ayuda adicional? </label>
-            <input type="checkbox" id="the-heckbox" checked />
-            <input type="submit">
-        </form>
-
-
-        <button onclick="mostrarInformacion()"> Muestra más información! </button>
-        <p id="informacion">Al dar click al botón, se muestra más información</p>
         
         <script src="script.js"> </script>
     </body>
 
     <footer>
+        <blockquote cite="https://www.shopify.com/es/blog/frases-inspiradoras-para-emprendedores#">
+            <p><q>La mejor forma de empezar algo es dejar de hablar de ello y ponerse a hacerlo</q> <cite>(Walt Disney)</cite></p> <!--Cite is for citing the original author-->
+        </blockquote>
 
+        <abbr title="Grupo Corporativo Oransch">GCO </abbr>
+        &copy; Derechos Reservados 2025
     </footer>
 </html>
 
