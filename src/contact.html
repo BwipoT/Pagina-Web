@@ -26,9 +26,10 @@
                 <fieldset> <!--fieldset is to group similar inputs-->
                     <leyend>Información General</leyend>
                     <br>
-                    <label>Nombre:
+                    <label><span aria-hidden="true">*</span>Nombre:
                         <input type="text" name="name" value="" required minlength="3" maxlength="64" size="20"/> <!--implicit form of association. The required is mandatory-->
                     </label>
+                    <!--Input type="range" is also an option-->
                     <!--the name attribute is to identify it in the server-->
                     <br><br>
                     <label for="edad">Edad (opcional):
@@ -96,6 +97,7 @@
             <h2>Dirección Física: 175 metros norte del Parque Central de San Rafael de Heredia, al costado sur de Importadora Monge</h2>
             <p>Horario presencial: <time datetime="7:00">7:00 am</time> a <time datetime="17:00">5:00 pm</time> </time> </p><!--ISO 8601 for datetime-->
             <p>Mail: <a href="mailto:gcocr@company.com">gcocr@company.com</a></p>
+            <!--For alt to describe an image, please describe the way it related to the link-->
         </address>
 
     </body>
@@ -103,4 +105,25 @@
     <footer>
 
     </footer>
+
+<!--According to the Web Content Accessibility Guidelines, we have the POUR principles:-->
+<!--P: perceivable-users should perceive the information you are presenting-->
+<!--O: operable-users must be able to interact with the user interface-->
+<!--U: understandable-users must be able to understand the information-->
+<!--R: robust - a massive range of browsers and tools must be able to interpret the content-->
+<!--Win + CTRL + ENTER for assistant with narrator in website-->
+<!--Check the website with Google DevTools, WAVE extension, IBM Equal Accessibility Checker-->
+
+<!--For dynamic content, WAI-ARIA is a set of standards for dynamic content. Its different than WCAG, since this is a general description-->
+<!--ARIA helps with the semantics of HTML elements. role="" helps to add more context to, for example, a division element.-->
+<!--Document structure roles: for defining the overall structure of a page. Example: aria-label="x squared + y squared = 3"-->
+<!--Widget roles: defines the purpose and functionality of interactive elements, like scrollbar, searchbox and others.-->
+<!--Landmark roles: classify and label the primary sections of a web page. This is defined with roles, unless you use HTML semantics-->
+<!--Live region roles: define elements with content that will change dynamically.-->
+<!--Window roles: define sub-windows, like pop up modal dialogues-->
+
+<!--For example, aria-label functions as an invisible label for interactive objects, like buttons.-->
+<!--aria-labelledby references to text that already exists on the page for the dynamic content. This is usually preferred over aria-label.-->
+<!--for decorative purpose or duplicated content, we use aria-hidden="true"-->
+<!--for aria-describedby its main use is for associate instructions and errors with inputs.-->
 </html>

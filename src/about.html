@@ -34,22 +34,32 @@
 
         <section id="facts-about"> <!--HTML tables are mainly used for displaying tabular data. The rest is used for CSS-->
             <table>
-                <caption>Hechos sobre Oransch</caption>
+                <caption>Hechos sobre Oransch</caption><!--Caption is the title of the webpage-->
                 <thead>
                     <tr>
-                        <th>Hecho</th>
-                        <th>Dato</th>
+                        <th scope="col">Hecho</th>
+                        <th scope="col">Dato</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Año de Creación</th>
+                        <th scope="row">Año de Creación</th>
                         <td>2023</td>
                     </tr>
                     <tr>
-                        <th>Cantidad de empleados</th>
+                        <th scope="row">Cantidad de empleados</th><!--This helps the readability of the webpage for accesibility-->
                         <td>5 personas</td>
                     </tr>
+                <tr>
+                    <th rowspan="3" scope="row">Miembros</th>
+                    <th scope="row">Yeriel</th>
+                </tr>
+                <tr>
+                    <th scope="row">Alexander</th>
+                </tr>
+                <tr>
+                    <th scope="row">Andrey</th>
+                </tr>
                 </tbody>
                 <tfoot>
                     <tr>
