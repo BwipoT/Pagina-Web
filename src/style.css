@@ -1,4 +1,15 @@
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
 p {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -11,7 +22,7 @@ p {
     border-radius: 20px;
 }
 
-#nav-bar{
+#navbar{
     background-color: lightcoral;
     background-size: auto;
 }
@@ -19,6 +30,16 @@ p {
 #video-prueba{
     max-width: 30%;
     max-height: 30%;
+}
+
+#sobre-nosotros{
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 0.6rem 1.5rem;
+
 }
 
 #sobre-nosotros:link{
