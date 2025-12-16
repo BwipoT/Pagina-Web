@@ -1,3 +1,30 @@
+/*border. It applies a border style to images. For classes, we use "figure img", being figure the father, and img the child*/
+/*To interact with different descendants, we use: > for the direct child (el primero identado en una clase o elemento)
+Then, we use + (for example, img + figcaption) for the second. If you want to apply something except for the first, you do ~.
+
+If I want to apply only a small style change to a text, we use inline elements. For example: <span style="color: red; border: 2px">red</span>
+DIV IS MAINLY USED FOR LAYOUT PURPOSES.
+
+For all p elements in a class, you put .class p{}
+*/
+
+/*text-decoration: none to remove any default lines or underlines of text*/
+
+/*In terms of specificity, the highest is the inlines, followed by IDs, class selector, attribute selector
+, pseudo-classes (:hover) and finally type selector (the tags of html). The lowest one is the * selector, with value of (0,0,0,0)*/
+
+
+/*at a high level, the relevance filters the styles that should apply to elements. Then it evaluates the origin and importance.
+It follows the specificity, reading hierarchy of appliance. Finally, the order of appearance orders that when two rules have the
+same specificity, then the one that appears last will be applied.
+ */
+
+/*To inherit some elements, you need to specify it. For example, if the main one has a style of padding: 20px, you can
+use padding: inherit. Some elements are inherited and some are not.*/
+
+/*Use line-height to properly space out elements. However, margin or padding is preferred*/
+
+/*For lists, list-style is used. There is list-style-type/position/image to personalize the bullets of the lists*/
 
 *{
     box-sizing: border-box;
@@ -6,8 +33,10 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /*The comma is for instances where the initial is not found or available*/
+    font-style: normal; !important; /*This overrides the hierarchy of styles. This is used to override third-party or as a temporary fix*/
     background-color: lightgray;
+    /*background-image: url() this can be used for background images*/
 }
 
 p {
@@ -15,6 +44,11 @@ p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(0, 0, 0);
 
+}
+
+#navbar, #video-prueba{ /*it applies to both*/
+    text-align: center; /*For aligning text*/
+    border-color: antiquewhite;
 }
 
 .form-element{
@@ -80,4 +114,20 @@ p {
 
 #profile-github:active{
     color: green;
+}
+
+.inline-block-element{
+    display: inline-block; /*While the inline cannot have controlled size, the inline-block lets you do it.*/
+    width: fit-content;
+    height: fit-content;
+}
+
+.element1{
+    background-color: lightblue;
+    margin: 20px 25px 30px 35px; /*If its only margin, its applied to all. The order is top, right, bottom, left.*/
+    padding: 5px 10px 5px 10px; /*this is only for spacing between the content and its border*/
+}
+
+.element2{
+    background-color: lightcoral;
 }
