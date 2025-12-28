@@ -35,8 +35,17 @@ use padding: inherit. Some elements are inherited and some are not.*/
 body{
     font-family: Arial, Helvetica, sans-serif; /*The comma is for instances where the initial is not found or available*/
     font-style: normal; !important; /*This overrides the hierarchy of styles. This is used to override third-party or as a temporary fix*/
-    background-color: lightgray;
+    background: linear-gradient(to right, lightsalmon, lightgreen);
+    /*radial-gradient is also useful for this.*/
+    height: 40vh;
     /*background-image: url() this can be used for background images*/
+    /*background-size: contain; to scale the image without cropping or stretching it. Use cover to maintain aspect ratio and only one*/
+    /*background-repeat: no-repeat; to avoid repeating. To only repeat horizontally, use background-repeat: repeat-x*/
+    /*background-position: center top; to center the background*/
+    /*background attachment: scroll or fixed, to move or not with the scroll website*/
+    /*you can combine all of them with the background: center top fixed url()*/
+    /*min-heigh: 100px; */
+    /*The WCAG recommends 4.5:1 ratio for contrast in normal text, and 3:1 for large text. Avoid using just colors to indicate important information*/
 }
 
 p {
@@ -47,8 +56,15 @@ p {
 }
 
 #navbar, #video-prueba{ /*it applies to both*/
-    text-align: center; /*For aligning text*/
+    text-align: center; /*For aligning text. vertical alignment is useful to fill a form or contact element.*/
     border-color: antiquewhite;
+    cursor: pointer;
+    /*You can also do border-top, bottom etc with solid, dashed, dotted or double*/
+    /*outline and border-radius are also other ways to create a border*/
+}
+
+#navbar{
+    /*flex-wrap: wrap; is to allow items to bread onto multiple lines*/
 }
 
 .form-element{
@@ -62,7 +78,7 @@ p {
 }
 
 #video-prueba{
-    max-width: 30%;
+    max-width: 30%; /*width: unset is to remove the rule previously done*/
     max-height: 30%;
 }
 
